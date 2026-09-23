@@ -55,4 +55,5 @@ SELECTION=$(echo -en "$MENU_ITEMS" | rofi -dmenu \
 
 if [ -n "$SELECTION" ]; then
     $SET_WALLPAPER_CMD "$WALLPAPER_DIR/$SELECTION"
+    matugen image "$WALLPAPER_DIR/$SELECTION" --source-color-index 0
 fi
