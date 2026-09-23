@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+options="  Reboot\n  Shutdown\n  Log Out\n  Lock"
+
+chosen=$(echo -e "$options" | rofi -dmenu -i -p "Power Menu:" \
+    -theme-str 'mainbox {children: [ listview ];}' \
+    -theme-str 'window {width: 15%;}' \
+    -theme-str 'listview {lines: 4; fixed-height: false;}')
+
+case "$chosen" in
+    *Reboot)
+        systemctl reboot
+        ;;
+    *Shutdown)
+        systemctl poweroff
+        ;;
+    *Log*Out)
+        command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'
+        ;;
+    *Lock)
+	hyprlock
+	;;
+esac
+

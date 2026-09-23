@@ -1,0 +1,8 @@
+* {
+    background:     {{colors.background.default.hex}};
+    background-alt: {{colors.surface_container.default.hex}};
+    foreground:     {{colors.on_background.default.hex}};
+    accent:         {{colors.primary.default.hex}};
+    selected:       {{colors.primary_container.default.hex}};
+}
+

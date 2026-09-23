@@ -1,0 +1,144 @@
+@import "colors.rasi"
+
+configuration {
+    modi: "drun,run";
+    disable-history: false;
+    sorting-method: "fzf";
+
+    run,drun {
+        fallback-icon: "application-x-addon";
+    }
+    show-icons: true;
+}
+
+* {
+    font: "JetBrainsMono Nerd Font Mono 14";
+}
+
+window {
+    width: 30%;
+    location: center;
+    anchor: center;
+    border-radius: 0px;
+    background-color: @background;
+    text-color: @foreground;
+    transparency: "screenshot";
+    border: 1px;
+    border-color: @accent;
+}
+
+entry {
+    placeholder: "";
+    text-color: @foreground;
+    font: "Open-Sans Bold 20";
+    blink: true;
+    padding: 12 15px;
+}
+
+textbox-prompt-colon {
+    enabled: false;
+}
+
+prompt {
+    enabled: false;
+}
+
+message {
+    content: "";
+    border: 0px;
+    text-color: red;
+    font: "Open-Sans Thin 12";
+}
+
+textbox {
+    text-color: inherit;
+    font: inherit;
+}
+
+listview {
+    spacing: 5px;
+    lines: 5;
+    fixed-height: false;
+    border: 0px;
+    dynamic: true;
+    require-input: false;
+}
+
+element {
+    border-radius: 5px;
+    children: [element-icon, element-text];
+}
+
+element.normal.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element.normal.urgent {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element.normal.active {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element.selected.normal {
+    background-color: @selected;
+    text-color: @foreground;
+}
+
+element.selected.urgent {
+    background-color: @selected;
+    text-color: @foreground;
+}
+
+element.selected.active {
+    background-color: @selected;
+    text-color: @foreground;
+}
+
+element.alternate.normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element.alternate.urgent {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element.alternate.active {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element-text {
+    text-color: inherit;
+    highlight: None;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    enabled: true;
+    size: 40px;
+    padding: 10px 15px;
+}
+
+scrollbar {
+    handle-color: @background-alt;
+}
+
+inputbar {
+    children: [entry, case-indicator, icon-search];
+}
+
+icon-search {
+    expand: false;
+    filename: "searchicon_b3.svg";
+    size: 30px;
+    padding: 12.5px 17.5px;
+    vertical-align: 0.5;
+}
+
