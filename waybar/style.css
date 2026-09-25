@@ -1,9 +1,4 @@
-@import "colors.css"; /* 1. Import the Matugen generated file */
-
-/* You can remove or comment out your old static definitions:
-@define-color bg rgba(30, 30, 46, 1);
-@define-color shadow #64727D;
-*/
+@import "colors.css"; 
 
 * {
     font-family: jetbrains-mono-nerd;
@@ -15,8 +10,8 @@ window#waybar {
 }
 
 window#waybar > box {
-    background-color: @bg; /* Uses Matugen background */
-    color: @fg;            /* Swapped #ffffff for dynamic text */
+    background-color: @bg; 
+    color: @fg;            
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 10px;
@@ -40,7 +35,7 @@ button {
 
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px @fg; /* Swapped #ffffff for dynamic text color */
+    box-shadow: inset 0 -3px @fg; 
 }
 
 #pulseaudio:hover {
@@ -50,7 +45,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @fg; /* Swapped #ffffff */
+    color: @fg; 
 }
 
 #workspaces button:hover {
@@ -59,26 +54,26 @@ button:hover {
 
 #workspaces button.focused, #workspaces button.active {
       background-color: transparent;
-      box-shadow: inset 0 -3px 0 0 @accent; /* Swapped @shadow for Matugen @accent */
+      box-shadow: inset 0 -3px 0 0 @accent; 
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b; /* Keep static or swap to a system alert color if desired */
+    background-color: #eb4d4b; 
 }
 
 #mode {
-    background-color: @surface; /* Swapped #64727D for an alternate surface container */
+    background-color: @surface; 
     box-shadow: inset 0 -3px @fg;
 }
 
 #cpu{
-	color: @primary; /* Swapped Catppuccin Peach (#fab387) for primary palette color */
+	color: @primary; 
 	margin-right: 14px;
 }
 
 #network{
      padding: 0 10px;
-     color: @tertiary; /* Swapped Catppuccin Mauve (#cba6f7) for tertiary color */
+     color: @tertiary; 
      margin-right: 10px;
 }
 
@@ -87,7 +82,7 @@ button:hover {
 #pulseaudio,
 #wireplumber{
     padding: 0 10px;
-    color: @fg; /* Swapped #ffffff */
+    color: @fg; 
 }
 
 #window,
@@ -104,8 +99,8 @@ button:hover {
 }
 
 #clock {
-    background-color: @surface; /* Swapped @shadow background */
-    color: @fg;                 /* Swapped #000000 to accessible text color */
+    background-color: @surface; 
+    color: @fg;                 
 }
 
 #battery {
@@ -115,7 +110,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: @fg;
-    background-color: @surface; /* Swapped @shadow */
+    background-color: @surface; 
 }
 
 @keyframes blink {
@@ -160,7 +155,7 @@ label:focus {
 
 #memory {
     background-color: transparent;
-    color: @secondary; /* Swapped Catppuccin Green (#a6e3a1) for secondary color */
+    color: @secondary; 
     margin-right: 20px;
     margin-left: 0px;
 }
@@ -175,7 +170,7 @@ label:focus {
 
 #pulseaudio {
     background-color: transparent;
-    color: @primary; /* Swapped custom pink */
+    color: @primary; 
     margin-right: 2px;
 }
 
@@ -185,8 +180,8 @@ label:focus {
 }
 
 #wireplumber {
-    background-color: @surface; /* Swapped #fff0f5 */
-    color: @fg;                 /* Swapped #000000 */
+    background-color: @surface; 
+    color: @fg;                 
 }
 
 #wireplumber.muted {
@@ -196,7 +191,7 @@ label:focus {
 #custom-power {
 	margin-right: 12px;
 	margin-left: 2px;
-	color: @primary; /* Swapped Catppuccin Maroon (#f38ba8) */
+	color: @primary; 
 }
 
 #custom-walls {
