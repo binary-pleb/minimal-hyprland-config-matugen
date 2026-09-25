@@ -22,8 +22,8 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "HDMI-A-1",
-    mode     = "1920x1080@240",
+    output   = "",
+    mode     = "preferred",
     position = "auto",
     scale    = "1",
 })
@@ -115,8 +115,8 @@ hl.config({
         rounding_power   = 10,
 
         -- Change transparency of focused and unfocused windows
-        active_opacity   = 0.95,
-        inactive_opacity = 0.75,
+        active_opacity   = 0.90,
+        inactive_opacity = 0.90,
 
         shadow           = {
             enabled      = true,
@@ -259,10 +259,10 @@ hl.device({
 
 local mainMod = "ALT" -- Sets "Windows" key as main modifier
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("/usr/bin/rofi-power-menu"))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("$HOME/.local/bin/rofi-power-menu"))
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
-hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("rofi-wall-switcher"))
+hl.bind("ALT + SHIFT + W", hl.dsp.exec_cmd("$HOME/.local/bin/rofi-wall-switcher"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("rofi -show ssh"))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
