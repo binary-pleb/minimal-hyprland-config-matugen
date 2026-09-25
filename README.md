@@ -34,11 +34,9 @@
 ## Screenshots
 
 ![desktop](screenshots/desktop.png)
-![waybar](screenshots/waybar.png)
 ![rofi](screenshots/rofi.png)
 ![wallpaper switcher](screenshots/rofi_wall_switcher.png)
 
 ## Credits & Acknowledgments
 
 * **Rofi Theme:** Based on [outtheme-rofi-theme](https://github.com/OuterFrog/outtheme-rofi-theme) by **OuterFrog** (with minor edits).
-* **Catppuccin:** Colors scheme by the [Catppuccin Community](https://github.com/catppuccin/catppuccin).
