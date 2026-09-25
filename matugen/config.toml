@@ -14,3 +14,12 @@ input_path = "~/.config/matugen/templates/kitty_colors.conf"
 output_path = "~/.config/kitty/colors.conf"
 post_hook = "pkill -SIGUSR2 kitty"
 
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme "Adwaita" && gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-{{mode}}"'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface color-scheme "default" && gsettings set org.gnome.desktop.interface color-scheme "prefer-{{mode}}"'

@@ -55,6 +55,24 @@ else
 fi
 
 
+if [ -d "$CONFIG_DEST/gtk-3.0" ]; then
+    rm -rf "$CONFIG_DEST/gtk-3.0"
+    mkdir -p "$CONFIG_DEST/gtk-3.0"
+    cp "gtk-3.0"/* "$CONFIG_DEST/gtk-3.0"
+else
+    cp "gtk-3.0"/* "$CONFIG_DEST/gtk-3.0"
+fi
+
+
+if [ -d "$CONFIG_DEST/gtk-4.0" ]; then
+    rm -rf "$CONFIG_DEST/gtk-4.0"
+    mkdir -p "$CONFIG_DEST/gtk-4.0"
+    cp "gtk-4.0"/* "$CONFIG_DEST/gtk-4.0"
+else
+    cp "gtk-4.0"/* "$CONFIG_DEST/gtk-4.0"
+fi
+
+
 mkdir -p $HOME/.local/bin
 cp rofi-power-menu $HOME/.local/bin/
 cp rofi-wall-switcher $HOME/.local/bin/
