@@ -25,4 +25,6 @@ mkdir -p "$HOME/.local/bin"
 cp "$SCRIPT_DIR/rofi-power-menu" "$HOME/.local/bin/"
 cp "$SCRIPT_DIR/rofi-wall-switcher" "$HOME/.local/bin/"
 
+hyprctl reload
+
 echo "Done! Log out and select Hyprland from your display manager or run start-hyprland if you're not using one."
