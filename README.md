@@ -33,6 +33,12 @@
 
 ## Screenshots
 
+<img width="1920" height="1080" alt="rice1" src="https://github.com/user-attachments/assets/8fe14ea3-e7d4-4222-861d-6bc8ecaf0c4a" />
+<img width="1920" height="1080" alt="rice4" src="https://github.com/user-attachments/assets/a7765dc6-01b1-4c73-8fb6-1aae350b5874" />
+<img width="1920" height="1080" alt="rice3" src="https://github.com/user-attachments/assets/68e78683-fd7a-4e5c-8f33-2e5fdba9034b" />
+<img width="1920" height="1080" alt="rice2" src="https://github.com/user-attachments/assets/457b2e50-28f0-4e19-adcd-423fc3c1b525" />
+
+
 
 ## Credits & Acknowledgments
 
