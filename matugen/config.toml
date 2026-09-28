@@ -23,3 +23,7 @@ post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme "Adwaita" && gs
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/colors.css'
 post_hook = 'gsettings set org.gnome.desktop.interface color-scheme "default" && gsettings set org.gnome.desktop.interface color-scheme "prefer-{{mode}}"'
+
+[templates.fish]
+input_path = "~/.config/matugen/templates/colors.fish"
+output_path = "~/.config/fish/conf.d/colors.fish"

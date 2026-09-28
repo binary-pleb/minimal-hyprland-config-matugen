@@ -11,7 +11,7 @@ CONFIG_DEST="$HOME/.config"
 
 echo "Installing dotfiles..."
 
-for dir in hypr kitty waybar rofi matugen gtk-3.0 gtk-4.0; do
+for dir in fish hypr kitty waybar rofi matugen gtk-3.0 gtk-4.0; do
     if [ -d "$SCRIPT_DIR/$dir" ]; then
         rm -rf "$CONFIG_DEST/$dir"
         mkdir -p "$CONFIG_DEST/$dir"

@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --path PATH:/usr/local/sbin\x1e\x7e/\x2elocal/bin\x1e/usr/local/bin\x1e\x7e/\x2elocal/bin\x1e/usr/bin\x1e\x7e/\x2elocal/bin\x1e/usr/bin/site_perl\x1e\x7e/\x2elocal/bin\x1e/usr/bin/vendor_perl\x1e\x7e/\x2elocal/bin\x1e/usr/bin/core_perl\x1e\x7e/\x2elocal/bin
+SETUVAR fish_greeting:
