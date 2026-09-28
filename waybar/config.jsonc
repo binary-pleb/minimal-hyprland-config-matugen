@@ -5,29 +5,62 @@
     "margin-top": 4,
     "margin-left": 5,
     "margin-right": 5,
-    "height": 30,
-    // "width": 1280,
+    "height": 32,
     "spacing": 4,
+    
     "modules-left": [
-        "hyprland/workspaces"
+        "group/pill-left"
     ],
     "modules-center": [
-        "clock"
+        "group/pill-center"
     ],
     "modules-right": [
-        "pulseaudio",
-        "network",
-	"cpu",
-        "memory",
-        "battery",
-	"custom/power"
+        "group/pill-right1",
+	"group/pill-right2"
     ],
     
-        "clock": {
-        // "timezone": "America/New_York",
-	"format": "{:%I:%M %p}",
+    
+    "group/pill-left": {
+        "orientation": "horizontal",
+        "modules": [
+	    "custom/power",
+            "hyprland/workspaces"
+        ]
+    },
+
+    "group/pill-center": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock"
+        ]
+    },
+
+    "group/pill-right1": {
+        "orientation": "horizontal",
+        "modules": [
+            "network",
+	    "pulseaudio"
+        ]
+    },
+   
+    "group/pill-right2": {
+	"orientation": "horizontal",
+	"modules": [
+	    "cpu",
+	    "memory"
+	]
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
+    },
+    "hyprland/workspaces": {
+	    "persistent-workspaces": {
+		    "*": [1, 2, 3, 4, 5]
+	    },
+	    "persistent-only": false
     },
     "memory": {
         "format": "{}% "
@@ -37,7 +70,6 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 15
         },
@@ -74,15 +106,13 @@
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󰖪",
-	"on-click": "kitty -- nmtui"
+        "format-disconnected": "  ",
+        "on-click": "kitty -- nmtui"
     },
     "pulseaudio": {
-        "scroll-step": 1, // %, can be a float
+        "scroll-step": 1,
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "{format_source}",
+        "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -96,4 +126,5 @@
         },
         "on-click": "pavucontrol"
     } 
+}
 }
