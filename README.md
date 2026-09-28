@@ -33,9 +33,6 @@
 
 ## Screenshots
 
-![desktop](screenshots/desktop.png)
-![rofi](screenshots/rofi.png)
-![wallpaper switcher](screenshots/rofi_wall_switcher.png)
 
 ## Credits & Acknowledgments
 
